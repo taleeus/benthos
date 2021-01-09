@@ -1,32 +1,77 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">HOME</router-link>
+      <!-- <router-link to="/music">MUSIC</router-link> -->
+      <a href="https://teespring.com/it/stores/benthos" target="_blank"
+        >MERCH</a
+      >
+      <a href="https://www.bandsintown.com/a/1419641-benthos" target="_blank"
+        >TOUR</a
+      >
+      <!-- <router-link to="/about">ABOUT</router-link> -->
     </div>
-    <router-view/>
+    <router-view />
+    <Footer></Footer>
   </div>
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #867c64;
 }
 
 #nav {
+  display: flex;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
   padding: 30px;
 }
 
 #nav a {
+  text-decoration: none;
   font-weight: bold;
-  color: #2c3e50;
+  margin: auto;
+  color: #959082;
+}
+
+#nav a:hover {
+  color: #b48829;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #b48829;
+}
+
+@media (max-width: 1024px) {
+  #nav {
+    font-size: 10px;
+    padding: 15px;
+  }
 }
 </style>
+
+<script>
+import Footer from "@/components/Footer";
+
+export default {
+  mounted() {
+    document.title = "Benthos";
+  },
+  components: {
+    Footer,
+  },
+};
+</script>
