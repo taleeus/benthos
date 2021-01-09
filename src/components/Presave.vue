@@ -41,7 +41,7 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  opacity: 70%;
+  opacity: 0.7 !important;
 }
 
 #presave-image button:hover {

@@ -26,13 +26,13 @@
 }
 
 #logo {
-  opacity: 50%;
+  opacity: 0.5 !important;
   width: 30%;
 }
 
 @media (max-width: 1024px) {
   #logo {
-    opacity: 50%;
+    opacity: 50% !important;
     width: 80%;
   }
 }
