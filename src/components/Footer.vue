@@ -23,7 +23,7 @@
       ></a>
     </div>
     <div id="label-link">
-      <a href="https://www.eclipserecords.com/band/benthos/">
+      <a href="https://www.eclipserecords.com/band/benthos/" target="_blank" >
         <img src="@/assets/eclipse-logo.png" alt="eclipse-logo"
       /></a>
     </div>
