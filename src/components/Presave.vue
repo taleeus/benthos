@@ -55,6 +55,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   color: #b48829;
   opacity: 0.8;
+  letter-spacing: 15px;
 }
 
 #cover-art {
@@ -72,6 +73,7 @@ h1 {
 @media (max-width: 1024px) {
   h1 {
     font-size: 20px;
+    letter-spacing: 5px;
   }
 
   #presave-image {
