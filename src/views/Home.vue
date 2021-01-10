@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <video autoplay muted loop id="background">
+    <video autoplay muted loop playsinline id="background">
       <source src="@/assets/background.mp4" type="video/mp4" />
     </video>
     <img

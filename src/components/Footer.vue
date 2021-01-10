@@ -22,6 +22,11 @@
         ><i class="fa fa-envelope" aria-hidden="true"></i
       ></a>
     </div>
+    <div id="label-link">
+      <a href="https://www.eclipserecords.com/band/benthos/">
+        <img src="@/assets/eclipse-logo.png" alt="eclipse-logo"
+      /></a>
+    </div>
   </div>
 </template>
 
@@ -46,11 +51,22 @@
 }
 
 #social-links a {
+  opacity: 0.8;
   color: #959082;
 }
 
 #social-links a:hover {
   color: #b48829;
+}
+
+#label-link {
+  padding-top: 5px;
+  padding-right: 40px;
+  opacity: 0.8;
+}
+
+#label-link img {
+  width: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -67,6 +83,14 @@
 
   #social-links a {
     letter-spacing: 25px;
+  }
+
+  #label-link {
+    padding-right: 20px;
+  }
+
+  #label-link img {
+    width: 30px;
   }
 }
 </style>

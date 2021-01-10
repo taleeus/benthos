@@ -1,9 +1,9 @@
 <template>
   <div class="presave">
-    <h1>April 23, 2021</h1>
+    <h1>APRIL 23, 2021</h1>
     <div id="presave-image">
       <button onclick="window.open('https://ffm.to/bnthii', '_blank')">
-        Presave
+        PRESAVE
       </button>
       <img
         src="@/assets/cover-art.jpg"
@@ -16,6 +16,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 #presave {
   text-align: center;
 }
@@ -28,7 +30,7 @@
 }
 
 #presave-image button {
-  font-family: "Bodoni Moda", serif;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 90%;
   left: 50%;
@@ -50,7 +52,9 @@
 }
 
 h1 {
-  color: #c28642be;
+  font-family: 'Montserrat', sans-serif;
+  color: #b48829;
+  opacity: 0.8;
 }
 
 #cover-art {
@@ -85,8 +89,8 @@ h1 {
   }
 
   #presave-image button {
-    font-size: 14px;
-    padding: 0px 8px;
+    font-size: 12px;
+    padding: 2px 8px;
   }
 }
 </style>

@@ -45,6 +45,7 @@
   font-weight: bold;
   margin: auto;
   color: #959082;
+  opacity: 0.8;
 }
 
 #nav a:hover {
