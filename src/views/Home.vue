@@ -10,6 +10,10 @@
       id="logo"
     />
     <Presave></Presave>
+    <br>
+    <br>
+    <br>
+    <br>
   </div>
 </template>
 
@@ -34,6 +38,7 @@
   #logo {
     opacity: 0.5 !important;
     width: 80%;
+    margin-bottom: 0;
   }
 }
 </style>
