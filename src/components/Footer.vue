@@ -34,6 +34,8 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 #footer {
+  background: linear-gradient(to bottom, #ffffff00 0%,#000000 100%); 
+
   position: fixed;
   left: 0;
   bottom: 0;
@@ -77,8 +79,8 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    left: 10px;
-    bottom: 15px;
+    /* left: 10px;
+    bottom: 15px; */
   }
 
   #social-links a {
@@ -91,6 +93,10 @@
 
   #label-link img {
     width: 30px;
+  }
+
+  #label-link {
+    padding-right: 0px;
   }
 }
 </style>

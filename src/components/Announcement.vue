@@ -1,36 +1,41 @@
 <template>
-  <div class="presave">
-    <h1>APRIL 23, 2021</h1>
-    <div id="presave-image">
-      <button onclick="window.open('https://ffm.to/bnthii', '_blank')">
-        PRESAVE
+  <div id="announcement">
+    <h1>{{ headerText }}</h1>
+    <div id="announcement-image">
+      <button :onclick="onButtonClick">
+        {{ buttonText }}
       </button>
       <img
-        src="@/assets/cover-art.jpg"
-        alt="benthos-cover-art"
-        id="cover-art"
+        :src="require(`@/assets/${imageName}`)"
+        id="image"
       />
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  props: {
+    headerText: String,
+    buttonText: String,
+    onButtonClick: Function,
+    imageName: String
+  }
+}
+</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-#presave {
-  text-align: center;
-}
-
-#presave-image {
+#announcement-image {
   position: relative;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#presave-image button {
-  font-family: 'Montserrat', sans-serif;
+#announcement-image button {
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   top: 90%;
   left: 50%;
@@ -43,22 +48,17 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  opacity: 0.7 !important;
-}
-
-#presave-image button:hover {
-  background-color: #35322eb4;
-  color: #c28642be;
+  opacity: 0.9 !important;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #b48829;
   opacity: 0.8;
   letter-spacing: 15px;
 }
 
-#cover-art {
+#image {
   background: #817e77b4;
   padding: 12px;
   border: 1px solid #0000004b;
@@ -76,11 +76,11 @@ h1 {
     letter-spacing: 5px;
   }
 
-  #presave-image {
+  #announcement-image {
     width: 100%;
   }
 
-  #cover-art {
+  #image {
     padding: 4px;
     display: block;
     margin-left: auto;
@@ -90,7 +90,7 @@ h1 {
     height: auto;
   }
 
-  #presave-image button {
+  #announcement-image button {
     font-size: 12px;
     padding: 2px 8px;
   }
