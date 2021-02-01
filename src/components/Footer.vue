@@ -1,6 +1,9 @@
 <template>
   <div id="footer">
     <div id="social-links">
+      <a href="https://open.spotify.com/artist/0A7v88d7h8uYeGaBhflb45?si=teGeb8D8S92fEpK3VrAxGg" target="_blank"
+        ><i class="fa fa-spotify" aria-hidden="true"></i
+      ></a>
       <a href="https://www.facebook.com/Benthos.Milano" target="_blank"
         ><i class="fa fa-facebook" aria-hidden="true"></i
       ></a>
@@ -84,7 +87,7 @@
   }
 
   #social-links a {
-    letter-spacing: 25px;
+    letter-spacing: 15px;
   }
 
   #label-link {
