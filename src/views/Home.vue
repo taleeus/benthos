@@ -11,6 +11,9 @@
         id="logo"
       />
     </div>
+    <showcase title="LAST VIDEO" :component="component"></showcase>
+    <br />
+    <br />
     <div id="announcements">
       <announcement
         header-text="SINGLE OUT NOW"
@@ -66,6 +69,23 @@
   margin-bottom: 30px;
 }
 
+.video-responsive {
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1024px) {
   #logo {
     opacity: 0.5 !important;
@@ -82,11 +102,32 @@
 <script>
 // @ is an alias to /src
 import Announcement from "@/components/Announcement.vue";
+import Showcase from "@/components/Showcase.vue";
 
 export default {
   name: "Home",
+  data: () => ({
+    component: `
+    <div class="video-responsive">
+      <iframe
+        style="
+          width: 760px;
+          height: 450px;
+
+          @media (max-width: 1024px) {
+            
+          }
+        "
+        src="https://www.youtube.com/embed/hzknSmWxw2I"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>`,
+  }),
   components: {
     Announcement,
+    Showcase,
   },
 };
 </script>
