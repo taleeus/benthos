@@ -2,7 +2,7 @@
   <div id="announcement">
     <h1>{{ headerText }}</h1>
     <div id="announcement-image">
-      <button :onclick="onButtonClick">
+      <button @click="onButtonClick">
         {{ buttonText }}
       </button>
       <img

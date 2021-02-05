@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <video autoplay muted loop playsinline id="background">
-      <source src="@/assets/background-debris.webm" type="video/webm" />
+    <video autoplay muted loop playsinline id="background" poster="@/assets/cover.png">
+      <source src="@/assets/background.mp4" type="video/webm" />
     </video>
     <div id="header">
       <img
@@ -11,18 +11,29 @@
         id="logo"
       />
     </div>
+    <showcase title="LAST VIDEO">
+      <iframe
+        class="video-showcase"
+        src="https://www.youtube.com/embed/hzknSmWxw2I"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </showcase>
+    <br />
+    <br />
     <div id="announcements">
       <announcement
         header-text="SINGLE OUT NOW"
         image-name="debris-cover-art.jpg"
         button-text="LISTEN"
-        onButtonClick="window.open('http://spoti.fi/3ahqw1R', '_blank')"
+        :onButtonClick="openDebris"
       ></announcement>
       <announcement
         header-text="APRIL 23, 2021"
         image-name="cover-art.jpg"
         button-text="PRESAVE"
-        onButtonClick="window.open('https://ffm.to/bnthii', '_blank')"
+        :onButtonClick="openPresave"
       ></announcement>
     </div>
     <br />
@@ -66,6 +77,11 @@
   margin-bottom: 30px;
 }
 
+.video-showcase {
+  width: 760px;
+  height: 450px;
+}
+
 @media (max-width: 1024px) {
   #logo {
     opacity: 0.5 !important;
@@ -76,17 +92,28 @@
   #announcements {
     flex-direction: column;
   }
+
+  .video-showcase {
+    width: 300px;
+    height: 180px;
+  }
 }
 </style>
 
 <script>
 // @ is an alias to /src
 import Announcement from "@/components/Announcement.vue";
+import Showcase from "@/components/Showcase.vue";
 
 export default {
   name: "Home",
   components: {
     Announcement,
+    Showcase,
+  },
+  methods: {
+    openDebris: () => window.open("http://spoti.fi/3ahqw1R", "_blank"),
+    openPresave: () => window.open("https://ffm.to/bnthii", "_blank"),
   },
 };
 </script>
