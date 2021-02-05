@@ -1,7 +1,7 @@
 <template>
   <div id="showcase">
     <h1>{{ title }}</h1>
-    <div id="component" contenteditable v-html="component"></div>
+    <slot />
   </div>
 </template>
 
