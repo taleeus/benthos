@@ -113,7 +113,7 @@ export default {
   },
   methods: {
     openDebris: () => window.open("http://spoti.fi/3ahqw1R", "_blank"),
-    openCartesio: () => window.open("https://open.spotify.com/track/12C4ZE8aqeZSEwSUVH7RnJ?si=vMEgZkCgR7KU6PAgj5FFQw", "_blank"),
+    openCartesio: () => window.open("http://spoti.fi/3te99XE", "_blank"),
     openPresave: () => window.open("https://ffm.to/bnthii", "_blank"),
   },
 };
