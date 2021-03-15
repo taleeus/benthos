@@ -14,7 +14,7 @@
     <showcase title="LAST VIDEO">
       <iframe
         class="video-showcase"
-        src="https://www.youtube.com/embed/hzknSmWxw2I"
+        src="https://www.youtube.com/embed/TQuuQxOuI_k"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
