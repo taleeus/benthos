@@ -24,12 +24,14 @@
     <br />
     <div id="announcements">
       <announcement
+        announcement-name="Cartesio"
         header-text="SINGLE OUT NOW"
         image-name="cartesio-cover-art.jpg"
         button-text="LISTEN"
         :onButtonClick="openCartesio"
       ></announcement>
       <announcement
+        announcement-name="Presave"
         header-text="APRIL 23, 2021"
         image-name="cover-art.jpg"
         button-text="PRESAVE"
