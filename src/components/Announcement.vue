@@ -2,26 +2,36 @@
   <div id="announcement">
     <h1>{{ headerText }}</h1>
     <div id="announcement-image">
-      <button @click="onButtonClick">
+      <custom-button :onButtonClick="trackAndOpenAnnouncement">
         {{ buttonText }}
-      </button>
-      <img
-        :src="require(`@/assets/${imageName}`)"
-        id="image"
-      />
+      </custom-button>
+      <img :src="require(`@/assets/${imageName}`)" id="image" />
     </div>
   </div>
 </template>
 
 <script>
+import CustomButton from "./CustomButton";
+import { event } from "vue-analytics";
+
 export default {
   props: {
+    announcementName: String,
     headerText: String,
     buttonText: String,
     onButtonClick: Function,
-    imageName: String
-  }
-}
+    imageName: String,
+  },
+  methods: {
+    trackAndOpenAnnouncement: function() {
+      event('Announcement', 'click', this.announcementName)
+      this.onButtonClick()
+    },
+  },
+  components: {
+    CustomButton,
+  },
+};
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -32,23 +42,6 @@ export default {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-#announcement-image button {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #4b4842b4;
-  color: #a79369;
-  font-size: 20px;
-  padding: 6px 14px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  opacity: 0.9 !important;
 }
 
 h1 {
@@ -88,11 +81,6 @@ h1 {
     text-align: center;
     width: 60%;
     height: auto;
-  }
-
-  #announcement-image button {
-    font-size: 12px;
-    padding: 2px 8px;
   }
 }
 </style>
