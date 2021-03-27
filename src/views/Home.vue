@@ -14,7 +14,7 @@
     <showcase title="LAST VIDEO">
       <iframe
         class="video-showcase"
-        src="https://www.youtube.com/embed/hzknSmWxw2I"
+        src="https://www.youtube.com/embed/TQuuQxOuI_k"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -25,9 +25,9 @@
     <div id="announcements">
       <announcement
         header-text="SINGLE OUT NOW"
-        image-name="debris-cover-art.jpg"
+        image-name="cartesio-cover-art.jpg"
         button-text="LISTEN"
-        :onButtonClick="openDebris"
+        :onButtonClick="openCartesio"
       ></announcement>
       <announcement
         header-text="APRIL 23, 2021"
@@ -113,6 +113,7 @@ export default {
   },
   methods: {
     openDebris: () => window.open("http://spoti.fi/3ahqw1R", "_blank"),
+    openCartesio: () => window.open("http://spoti.fi/3te99XE", "_blank"),
     openPresave: () => window.open("https://ffm.to/bnthii", "_blank"),
   },
 };
