@@ -1,24 +1,40 @@
 <template>
   <div id="footer">
     <div id="social-links">
-      <a href="https://open.spotify.com/artist/0A7v88d7h8uYeGaBhflb45?si=teGeb8D8S92fEpK3VrAxGg" target="_blank"
+      <a
+        href="https://open.spotify.com/artist/0A7v88d7h8uYeGaBhflb45?si=teGeb8D8S92fEpK3VrAxGg"
+        target="_blank"
+        @click="trackSpotify"
         ><i class="fa fa-spotify" aria-hidden="true"></i
       ></a>
-      <a href="https://www.facebook.com/Benthos.Milano" target="_blank"
+      <a
+        href="https://www.facebook.com/Benthos.Milano"
+        target="_blank"
+        @click="trackFacebook"
         ><i class="fa fa-facebook" aria-hidden="true"></i
       ></a>
-      <a href="https://www.instagram.com/benthos_official/" target="_blank"
+      <a
+        href="https://www.instagram.com/benthos_official/"
+        target="_blank"
+        @click="trackInstagram"
         ><i class="fa fa-instagram" aria-hidden="true"></i
       ></a>
-      <a href="https://twitter.com/benthos_band" target="_blank"
+      <a
+        href="https://twitter.com/benthos_band"
+        target="_blank"
+        @click="trackTwitter"
         ><i class="fa fa-twitter" aria-hidden="true"></i
       ></a>
       <a
         href="https://www.youtube.com/channel/UCAoS8hqW5oR2xVZJH8P6z_w"
         target="_blank"
+        @click="trackYouTube"
         ><i class="fa fa-youtube" aria-hidden="true"></i
       ></a>
-      <a href="https://www.twitch.tv/benthosband" target="_blank"
+      <a
+        href="https://www.twitch.tv/benthosband"
+        target="_blank"
+        @click="trackTwitch"
         ><i class="fa fa-twitch" aria-hidden="true"></i
       ></a>
       <a href="mailto:benthos.milano@gmail.com" target="_blank"
@@ -26,18 +42,32 @@
       ></a>
     </div>
     <div id="label-link">
-      <a href="https://www.eclipserecords.com/band/benthos/" target="_blank" >
+      <a href="https://www.eclipserecords.com/band/benthos/" target="_blank">
         <img src="@/assets/eclipse-logo.png" alt="eclipse-logo"
       /></a>
     </div>
   </div>
 </template>
 
+<script>
+import { event } from "vue-analytics";
+
+export default {
+  methods: {
+    trackSpotify: () => event("Social", "click", "Spotify"),
+    trackFacebook: () => event("Social", "click", "Facebook"),
+    trackInstagram: () => event("Social", "click", "Instagram"),
+    trackTwitter: () => event("Social", "click", "Twitter"),
+    trackYouTube: () => event("Social", "click", "YouTube"),
+    trackTwitch: () => event("Social", "click", "Twitch"),
+  },
+};
+</script>
 <style>
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 #footer {
-  background: linear-gradient(to bottom, #ffffff00 0%,#000000 100%); 
+  background: linear-gradient(to bottom, #ffffff00 0%, #000000 100%);
 
   position: fixed;
   left: 0;

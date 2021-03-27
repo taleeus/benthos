@@ -3,12 +3,20 @@
     <div id="nav">
       <router-link to="/">HOME</router-link>
       <!-- <router-link to="/music">MUSIC</router-link> -->
-      <a href="https://teespring.com/it/stores/benthos" target="_blank"
-        >MERCH</a
+      <a
+        href="https://teespring.com/it/stores/benthos"
+        target="_blank"
+        @click="trackMerch"
       >
-      <a href="https://www.bandsintown.com/a/1419641-benthos" target="_blank"
-        >TOUR</a
+        MERCH
+      </a>
+      <a
+        href="https://www.bandsintown.com/a/1419641-benthos"
+        target="_blank"
+        @click="trackTour"
       >
+        TOUR
+      </a>
       <!-- <router-link to="/about">ABOUT</router-link> -->
     </div>
     <router-view />
@@ -66,8 +74,13 @@
 
 <script>
 import Footer from "@/components/Footer";
+import { event } from "vue-analytics"
 
 export default {
+  methods: {
+    trackMerch: () => event('Merch', 'click'),
+    trackTour: () => event('Tour', 'click'),
+  },
   mounted() {
     document.title = "Benthos";
   },
