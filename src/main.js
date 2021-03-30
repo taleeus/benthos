@@ -6,9 +6,6 @@ import VueAnalytics from 'vue-analytics'
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, { 
   id: 'G-CKZ7WQGF5D',
-  debug: {
-    sendHitTask: process.env.NODE_ENV === 'production'
-  },
   set: [
     { field: 'anonymizeIp', value: true }
   ],
