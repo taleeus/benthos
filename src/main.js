@@ -5,7 +5,7 @@ import VueAnalytics from 'vue-analytics'
 
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, { 
-  id: '266024791',
+  id: 'G-CKZ7WQGF5D',
   debug: {
     sendHitTask: process.env.NODE_ENV === 'production'
   },
