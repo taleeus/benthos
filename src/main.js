@@ -10,9 +10,10 @@ Vue.use(VueGtag, {
     params: {
       'anonymize_ip': true
     }
-  },
+  }
+},
   router
-})
+)
 
 Vue.config.productionTip = false
 
