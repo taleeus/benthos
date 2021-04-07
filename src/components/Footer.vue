@@ -50,16 +50,32 @@
 </template>
 
 <script>
-import { event } from "vue-analytics";
-
 export default {
   methods: {
-    trackSpotify: () => event("Social", "click", "Spotify"),
-    trackFacebook: () => event("Social", "click", "Facebook"),
-    trackInstagram: () => event("Social", "click", "Instagram"),
-    trackTwitter: () => event("Social", "click", "Twitter"),
-    trackYouTube: () => event("Social", "click", "YouTube"),
-    trackTwitch: () => event("Social", "click", "Twitch"),
+    trackSpotify: () => this.$gtag.event('Social', {
+        'event_category': 'click',
+        'event_label': 'Spotify',
+      }),
+    trackFacebook: () => this.$gtag.event('Social', {
+        'event_category': 'click',
+        'event_label': 'Facebook',
+      }),
+    trackInstagram: () => this.$gtag.event('Social', {
+        'event_category': 'click',
+        'event_label': 'Instagram',
+      }),
+    trackTwitter: () => this.$gtag.event('Social', {
+        'event_category': 'click',
+        'event_label': 'Twitter',
+      }),
+    trackYouTube: () => this.$gtag.event('Social', {
+        'event_category': 'click',
+        'event_label': 'YouTube',
+      }),
+    trackTwitch: () => this.$gtag.event('Social', {
+        'event_category': 'click',
+        'event_label': 'Twitch',
+      }),
   },
 };
 </script>

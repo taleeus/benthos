@@ -12,7 +12,6 @@
 
 <script>
 import CustomButton from "./CustomButton";
-import { event } from "vue-analytics";
 
 export default {
   props: {
@@ -24,7 +23,11 @@ export default {
   },
   methods: {
     trackAndOpenAnnouncement: function() {
-      event('Announcement', 'click', this.announcementName)
+      this.$gtag.event('Announcement', {
+        'event_category': 'click',
+        'event_label': this.announcementName,
+      })
+
       this.onButtonClick()
     },
   },

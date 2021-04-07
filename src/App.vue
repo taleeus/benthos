@@ -74,12 +74,17 @@
 
 <script>
 import Footer from "@/components/Footer";
-import { event } from "vue-analytics"
 
 export default {
   methods: {
-    trackMerch: () => event('Merch', 'click'),
-    trackTour: () => event('Tour', 'click'),
+    trackMerch: () =>
+      this.$gtag.event("Merch", {
+        event_category: "click",
+      }),
+    trackTour: () =>
+      this.$gtag.event("Tour", {
+        event_category: "click",
+      }),
   },
   mounted() {
     document.title = "Benthos";

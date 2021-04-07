@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueAnalytics from 'vue-analytics'
+import VueGtag from 'vue-gtag'
 
 // Configuration VueAnalytics
-Vue.use(VueAnalytics, { 
-  id: 'G-CKZ7WQGF5D',
-  set: [
-    { field: 'anonymizeIp', value: true }
-  ],
-  router 
+Vue.use(VueGtag, {
+  config: {
+    id: 'G-CKZ7WQGF5D',
+    params: {
+      'anonymize_ip': true
+    }
+  },
+  router
 })
 
 Vue.config.productionTip = false
