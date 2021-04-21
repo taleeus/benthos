@@ -52,30 +52,42 @@
 <script>
 export default {
   methods: {
-    trackSpotify: () => this.$gtag.event('Social', {
+    trackSpotify: function() {
+      this.$gtag.event('Social', {
         'event_category': 'click',
         'event_label': 'Spotify',
-      }),
-    trackFacebook: () => this.$gtag.event('Social', {
+      })
+    },
+    trackFacebook: function() {
+      this.$gtag.event('Social', {
         'event_category': 'click',
         'event_label': 'Facebook',
-      }),
-    trackInstagram: () => this.$gtag.event('Social', {
+      })
+    },
+    trackInstagram: function() {
+      this.$gtag.event('Social', {
         'event_category': 'click',
         'event_label': 'Instagram',
-      }),
-    trackTwitter: () => this.$gtag.event('Social', {
+      })
+    },
+    trackTwitter: function() {
+      this.$gtag.event('Social', {
         'event_category': 'click',
         'event_label': 'Twitter',
-      }),
-    trackYouTube: () => this.$gtag.event('Social', {
+      })
+    },
+    trackYouTube: function() {
+      this.$gtag.event('Social', {
         'event_category': 'click',
         'event_label': 'YouTube',
-      }),
-    trackTwitch: () => this.$gtag.event('Social', {
+      })
+    },
+    trackTwitch: function() {
+      this.$gtag.event('Social', {
         'event_category': 'click',
         'event_label': 'Twitch',
-      }),
+      })
+    },
   },
 };
 </script>

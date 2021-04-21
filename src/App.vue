@@ -11,6 +11,13 @@
         MERCH
       </a>
       <a
+        href="https://benthosmerch.bigcartel.com"
+        target="_blank"
+        @click="trackMerch"
+      >
+        BUY ALBUM
+      </a>
+      <a
         href="https://www.bandsintown.com/a/1419641-benthos"
         target="_blank"
         @click="trackTour"
@@ -77,14 +84,16 @@ import Footer from "@/components/Footer";
 
 export default {
   methods: {
-    trackMerch: () =>
+    trackMerch: function() {
       this.$gtag.event("Merch", {
         event_category: "click",
-      }),
-    trackTour: () =>
+      })
+    },
+    trackTour: function() {
       this.$gtag.event("Tour", {
         event_category: "click",
-      }),
+      })
+    },
   },
   mounted() {
     document.title = "Benthos";
