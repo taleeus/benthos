@@ -24,18 +24,11 @@
     <br />
     <div id="announcements">
       <announcement
-        announcement-name="Cartesio"
-        header-text="SINGLE OUT NOW"
-        image-name="cartesio-cover-art.jpg"
-        button-text="LISTEN"
-        :onButtonClick="openCartesio"
-      ></announcement>
-      <announcement
-        announcement-name="Presave"
-        header-text="APRIL 23, 2021"
+        announcement-name="AlbumStream"
+        header-text="II OUT NOW"
         image-name="cover-art.jpg"
-        button-text="PRESAVE"
-        :onButtonClick="openPresave"
+        button-text="STREAM"
+        :onButtonClick="openAlbumStream"
       ></announcement>
     </div>
     <br />
@@ -72,7 +65,8 @@
 #announcements {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
 }
 
 #announcement {
@@ -116,7 +110,7 @@ export default {
   methods: {
     openDebris: () => window.open("http://spoti.fi/3ahqw1R", "_blank"),
     openCartesio: () => window.open("http://spoti.fi/3te99XE", "_blank"),
-    openPresave: () => window.open("https://ffm.to/bnthii", "_blank"),
+    openAlbumStream: () => window.open("https://ffm.to/bnthii", "_blank"),
   },
 };
 </script>
