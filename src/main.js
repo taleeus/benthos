@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueGtag from 'vue-gtag'
+import vuetify from './plugins/vuetify'
 
 // Configuration VueAnalytics
 Vue.use(VueGtag, {
@@ -15,9 +16,10 @@ Vue.use(VueGtag, {
   router
 )
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 new Vue({
   router,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')
