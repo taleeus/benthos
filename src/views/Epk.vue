@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="epk">
     <Header />
     <Bio />
     <br />
@@ -59,7 +59,7 @@ h2 {
   margin: 20px;
 }
 
-#home {
+#epk {
   background-image: url('../assets/epk/background.jpg');
   background-size: cover;
 
@@ -90,7 +90,7 @@ h2 {
 }
 
 @media (max-width: 1024px) {
-  #home {
+  #epk {
     font-size: 10px;
   }
 
