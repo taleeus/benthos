@@ -73,9 +73,6 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
 #home {
   font-family: "Bodoni Moda", serif;
   letter-spacing: 2px;
