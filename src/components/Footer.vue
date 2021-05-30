@@ -122,7 +122,7 @@ export default {
 
 #label-link {
   padding-top: 5px;
-  padding-right: 40px;
+  /* padding-right: 20px; */
   opacity: 0.8;
 }
 
@@ -144,10 +144,6 @@ export default {
 
   #social-links a {
     letter-spacing: 15px;
-  }
-
-  #label-link {
-    padding-right: 20px;
   }
 
   #label-link img {
