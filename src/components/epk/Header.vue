@@ -22,7 +22,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 a {
   color: #efdfba;
   text-decoration: none;

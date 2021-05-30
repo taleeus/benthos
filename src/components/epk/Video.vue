@@ -142,7 +142,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .video-box {
   display: flex;
   align-items: center;

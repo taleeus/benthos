@@ -63,7 +63,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #gallery-title {
   text-align: right;
   margin-right: 25%;
