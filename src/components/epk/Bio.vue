@@ -12,7 +12,7 @@
         structures with geometric heavy riffs, the result is a unique universe
         of sounds which you must hear to believe. Gabriele Papagni and Enrico
         Tripoldi met towards the end of 2017, while they were both studying
-        classical guitar at Italy’s largest music university, The Guiseppe Verdi
+        classical guitar at Italy’s largest music university, The Giuseppe Verdi
         Conservatory of Music. They both grew up playing many different styles
         of music, and quickly found they shared the same passion for classical
         music as well as progressive rock and metal. While on holiday break,
@@ -42,7 +42,7 @@
         worldwide via Eclipse Records on April 23, 2021.
         <br />
         <br />
-        <h1>CREDITS</h1>
+        <h2>CREDITS</h2>
         “II” is mixed and mastered by Matteo Magni at Magnitude Recording Studio
         <br />Produced by Benthos and Matteo Magni <br />Cover artwork by Laura
         Salomoni <br />Photography by Alessandra Senna <br />Video by Stefano

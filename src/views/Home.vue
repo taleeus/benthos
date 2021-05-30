@@ -72,8 +72,23 @@
   </div>
 </template>
 
-<style scoped>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+#home {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #867c64;
+}
+
 #nav {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+
   display: flex;
   flex-wrap: nowrap;
 
@@ -82,6 +97,8 @@
 
   font-size: 20px;
   padding: 30px;
+
+  margin-top: 10px;
 }
 
 #nav a {

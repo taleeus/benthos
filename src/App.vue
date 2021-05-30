@@ -5,20 +5,6 @@
   </div>
 </template>
 
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-#app {
-  font-family: "Bodoni Moda", serif;
-  letter-spacing: 2px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #867c64;
-}
-</style>
-
 <script>
 import Footer from "@/components/Footer";
 
