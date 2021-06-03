@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import VueGtag from 'vue-gtag'
 import vuetify from './plugins/vuetify'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
 
 // Configuration VueAnalytics
 Vue.use(VueGtag, {
