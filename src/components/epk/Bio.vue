@@ -11,7 +11,7 @@
         unique songwriting style. By combining ethereal atmospheric song
         structures with geometric heavy riffs, the result is a unique universe
         of sounds which you must hear to believe. Gabriele Papagni and Enrico
-        Tripoldi met towards the end of 2017, while they were both studying
+        Tripodi met towards the end of 2017, while they were both studying
         classical guitar at Italy’s largest music university, The Giuseppe Verdi
         Conservatory of Music. They both grew up playing many different styles
         of music, and quickly found they shared the same passion for classical
