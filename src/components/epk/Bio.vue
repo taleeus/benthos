@@ -145,6 +145,7 @@ export default {
   padding-left: 100px;
   width: 200px;
   height: 440px;
+  margin-bottom: 20px;
 }
 
 #first-dragonfly {
