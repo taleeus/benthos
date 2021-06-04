@@ -1,6 +1,40 @@
 <template>
   <div class="home">
-    <video autoplay muted loop playsinline id="background" poster="@/assets/cover.png">
+    <div id="nav">
+      <router-link to="/">HOME</router-link>
+      <!-- <router-link to="/music">MUSIC</router-link> -->
+      <a
+        href="https://teespring.com/it/stores/benthos"
+        target="_blank"
+        @click="trackMerch"
+      >
+        MERCH
+      </a>
+      <a
+        href="https://benthosmerch.bigcartel.com"
+        target="_blank"
+        @click="trackMerch"
+      >
+        BUY ALBUM
+      </a>
+      <a
+        href="https://www.bandsintown.com/a/1419641-benthos"
+        target="_blank"
+        @click="trackTour"
+      >
+        TOUR
+      </a>
+      <!-- <router-link to="/about">ABOUT</router-link> -->
+    </div>
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      id="background"
+      poster="@/assets/cover.png"
+    >
       <source src="@/assets/background.mp4" type="video/webm" />
     </video>
     <div id="header">
@@ -8,7 +42,7 @@
         alt="Benthos logo"
         src="@/assets/logo.svg"
         cover="@/assets/cover.png"
-        id="logo"
+        id="logo-home"
       />
     </div>
     <showcase title="LAST VIDEO">
@@ -98,7 +132,7 @@
   justify-content: center;
 }
 
-#logo {
+#logo-home {
   opacity: 0.5 !important;
   width: 30%;
 }
@@ -120,7 +154,12 @@
 }
 
 @media (max-width: 1024px) {
-  #logo {
+  #nav {
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  #logo-home {
     opacity: 0.5 !important;
     width: 80%;
     margin-bottom: 0;
