@@ -39,6 +39,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.v-application--wrap {
+  min-height: 1vh !important;
+}
+
 h1 {
   letter-spacing: 20px;
 

@@ -110,7 +110,7 @@ export default {
 <style scoped>
 #bio-table {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -144,7 +144,6 @@ export default {
   flex: 40%;
   padding-left: 100px;
   width: 200px;
-  height: 440px;
   margin-bottom: 20px;
 }
 
@@ -169,7 +168,7 @@ export default {
     padding-left: 0;
 
     flex: auto;
-    width: 90%;
+    width: 100%;
     height: 310px;
   }
 

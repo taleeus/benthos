@@ -205,6 +205,10 @@ iframe {
   opacity: 0.4;
 }
 
+.v-application--wrap {
+  min-height: 1vh !important;
+}
+
 @media (max-width: 1024px) {
   iframe {
     width: 100%;
