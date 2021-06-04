@@ -91,9 +91,7 @@ export default {
   },
 };
 </script>
-<style>
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
+<style scoped>
 #footer {
   background: linear-gradient(to bottom, #ffffff00 0%, #000000 100%);
 
@@ -124,7 +122,7 @@ export default {
 
 #label-link {
   padding-top: 5px;
-  padding-right: 40px;
+  /* padding-right: 20px; */
   opacity: 0.8;
 }
 
@@ -146,10 +144,6 @@ export default {
 
   #social-links a {
     letter-spacing: 15px;
-  }
-
-  #label-link {
-    padding-right: 20px;
   }
 
   #label-link img {

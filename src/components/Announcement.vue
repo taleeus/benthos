@@ -22,13 +22,13 @@ export default {
     imageName: String,
   },
   methods: {
-    trackAndOpenAnnouncement: function() {
-      this.$gtag.event('Announcement', {
-        'event_category': 'click',
-        'event_label': this.announcementName,
-      })
+    trackAndOpenAnnouncement: function () {
+      this.$gtag.event("Announcement", {
+        event_category: "click",
+        event_label: this.announcementName,
+      });
 
-      this.onButtonClick()
+      this.onButtonClick();
     },
   },
   components: {
@@ -38,7 +38,9 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+#announcement {
+  text-align: center;
+}
 
 #announcement-image {
   position: relative;
@@ -52,6 +54,7 @@ h1 {
   color: #b48829;
   opacity: 0.8;
   letter-spacing: 15px;
+  font-weight: bold;
 }
 
 #image {

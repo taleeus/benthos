@@ -38,7 +38,48 @@
   </div>
 </template>
 
-<style scoped>
+<style>
+#home {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #867c64;
+}
+
+#nav {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  padding: 30px;
+
+  margin-top: 10px;
+}
+
+#nav a {
+  text-decoration: none;
+  font-weight: bold;
+  margin: auto;
+  color: #959082;
+  opacity: 0.8;
+}
+
+#nav a:hover {
+  color: #b48829;
+}
+
+#nav a.router-link-exact-active {
+  color: #b48829;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 #background {
   z-index: -1;
